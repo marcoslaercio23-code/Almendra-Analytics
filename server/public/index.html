@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍫 Análise Regional do Cacau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .loading { animation: pulse 2s infinite; }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-amber-800 to-amber-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold flex items-center gap-3">
+                🍫 Análise Regional do Cacau
+            </h1>
+            <p class="text-amber-200 mt-1">Dados climáticos, preços e análise por IA em tempo real</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Region Selector -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">📍 Selecione uma Região</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3" id="regionButtons">
+                <!-- Buttons will be loaded here -->
+                <div class="loading bg-gray-200 rounded-lg h-12"></div>
+                <div class="loading bg-gray-200 rounded-lg h-12"></div>
+                <div class="loading bg-gray-200 rounded-lg h-12"></div>
+            </div>
+        </div>
+
+        <!-- Analysis Result -->
+        <div id="analysisResult" class="hidden">
+            <!-- Region Header -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6 fade-in">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800" id="regionName">-</h2>
+                        <p class="text-gray-500" id="regionCountry">-</p>
+                    </div>
+                    <div class="text-right">
+                        <span id="riskBadge" class="px-4 py-2 rounded-full text-white font-semibold">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <!-- Card Clima -->
+                <div class="bg-white rounded-xl shadow-lg p-6 fade-in">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center gap-2">
+                        🌤️ Clima Atual
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Temperatura</span>
+                            <span class="font-bold text-2xl text-orange-600" id="temperature">-</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Condição</span>
+                            <span class="font-medium" id="weatherDesc">-</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Vento</span>
+                            <span class="font-medium" id="windSpeed">-</span>
+                        </div>
+                        <div class="mt-4 pt-4 border-t">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-500">Risco Climático</span>
+                                <span id="climateRisk" class="font-semibold">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Preço -->
+                <div class="bg-white rounded-xl shadow-lg p-6 fade-in">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center gap-2">
+                        💰 Preço
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="text-center py-4">
+                            <span class="text-4xl font-bold text-green-600" id="price">-</span>
+                            <span class="text-gray-500 block mt-1" id="priceUnit">-</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Tendência</span>
+                            <span id="priceTrend" class="font-semibold">-</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Variação Dia</span>
+                            <span id="priceVariation" class="font-medium">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Geopolítica -->
+                <div class="bg-white rounded-xl shadow-lg p-6 fade-in">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-4 flex items-center gap-2">
+                        🌍 Geopolítica
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Risco Geral</span>
+                            <span id="geoRisk" class="font-semibold">-</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Logística</span>
+                            <span id="geoLogistics" class="font-medium">-</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Conflito</span>
+                            <span id="geoConflict" class="font-medium">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Análise IA -->
+            <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl shadow-lg p-6 mb-6 fade-in">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                    🤖 Análise da Inteligência Artificial
+                </h3>
+                
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-semibold text-gray-700 mb-2">📝 Resumo</h4>
+                    <p class="text-gray-600" id="aiSummary">-</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">🌤️ Impacto Climático</h4>
+                        <p class="text-gray-600 text-sm" id="aiClimate">-</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">🌍 Impacto Geopolítico</h4>
+                        <p class="text-gray-600 text-sm" id="aiGeo">-</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-4 mt-4">
+                    <h4 class="font-semibold text-gray-700 mb-2">💡 Recomendação</h4>
+                    <p class="text-gray-600" id="aiRecommendation">-</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="bg-white rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">📈 Curto Prazo (1-2 semanas)</h4>
+                        <p class="text-gray-600 text-sm" id="aiShortTerm">-</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4">
+                        <h4 class="font-semibold text-gray-700 mb-2">📊 Médio Prazo (1-3 meses)</h4>
+                        <p class="text-gray-600 text-sm" id="aiMediumTerm">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metadados -->
+            <div class="text-center text-gray-500 text-sm">
+                <span id="metadata">-</span>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="hidden">
+            <div class="bg-white rounded-xl shadow-lg p-12 text-center">
+                <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-amber-500 border-t-transparent mb-4"></div>
+                <p class="text-gray-600">Analisando região... Isso pode levar alguns segundos.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-amber-200 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>🍫 Cacau Market - Análise Regional com IA</p>
+        </div>
+    </footer>
+
+    <script>
+        const API_BASE = '';
+
+        // Carregar regiões ao iniciar
+        async function loadRegions() {
+            try {
+                const response = await fetch(`${API_BASE}/api/regions`);
+                const data = await response.json();
+                
+                const container = document.getElementById('regionButtons');
+                container.innerHTML = '';
+
+                // Separar Brasil e Global
+                const brRegions = data.data.filter(r => r.type === 'BR');
+                const globalRegions = data.data.filter(r => r.type === 'GLOBAL');
+
+                // Adicionar título Brasil
+                container.innerHTML += `<div class="col-span-full mt-2 mb-1"><span class="text-sm font-semibold text-gray-600">🇧🇷 Brasil</span></div>`;
+                
+                brRegions.forEach(region => {
+                    container.innerHTML += createRegionButton(region);
+                });
+
+                // Adicionar título Global
+                container.innerHTML += `<div class="col-span-full mt-4 mb-1"><span class="text-sm font-semibold text-gray-600">🌍 Global</span></div>`;
+                
+                globalRegions.forEach(region => {
+                    container.innerHTML += createRegionButton(region);
+                });
+
+            } catch (error) {
+                console.error('Erro ao carregar regiões:', error);
+            }
+        }
+
+        function createRegionButton(region) {
+            const flag = region.type === 'BR' ? '🇧🇷' : '🌍';
+            return `
+                <button onclick="loadAnalysis('${region.id}')" 
+                    class="px-4 py-3 bg-amber-100 hover:bg-amber-200 rounded-lg text-amber-900 font-medium transition-all hover:shadow-md">
+                    ${flag} ${region.name}
+                </button>
+            `;
+        }
+
+        async function loadAnalysis(regionId) {
+            const resultDiv = document.getElementById('analysisResult');
+            const loadingDiv = document.getElementById('loadingState');
+            
+            resultDiv.classList.add('hidden');
+            loadingDiv.classList.remove('hidden');
+
+            try {
+                const response = await fetch(`${API_BASE}/api/regions/${regionId}/analysis`);
+                const data = await response.json();
+
+                if (data.success) {
+                    displayAnalysis(data.data);
+                    loadingDiv.classList.add('hidden');
+                    resultDiv.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error('Erro ao carregar análise:', error);
+                loadingDiv.innerHTML = `
+                    <div class="bg-red-50 rounded-xl p-6 text-center">
+                        <p class="text-red-600">❌ Erro ao carregar análise. Tente novamente.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayAnalysis(data) {
+            // Região
+            document.getElementById('regionName').textContent = data.region.name;
+            document.getElementById('regionCountry').textContent = `${data.region.country} - ${data.region.type}`;
+
+            // Risk Badge
+            const riskBadge = document.getElementById('riskBadge');
+            const riskLevel = data.analysis?.riskLevel || 'desconhecido';
+            riskBadge.textContent = `Risco ${riskLevel.toUpperCase()}`;
+            riskBadge.className = `px-4 py-2 rounded-full text-white font-semibold ${
+                riskLevel === 'alto' ? 'bg-red-500' : 
+                riskLevel === 'moderado' ? 'bg-yellow-500' : 'bg-green-500'
+            }`;
+
+            // Clima
+            if (data.climate && !data.climate.error) {
+                document.getElementById('temperature').textContent = `${data.climate.current?.temperature || '-'}°C`;
+                document.getElementById('weatherDesc').textContent = data.climate.current?.weatherDescription || '-';
+                document.getElementById('windSpeed').textContent = `${data.climate.current?.windSpeed || '-'} km/h`;
+                
+                const climateRisk = data.climate.risk?.level || '-';
+                const climateRiskEl = document.getElementById('climateRisk');
+                climateRiskEl.textContent = climateRisk;
+                climateRiskEl.className = `font-semibold ${
+                    climateRisk === 'alto' ? 'text-red-600' : 
+                    climateRisk === 'moderado' ? 'text-yellow-600' : 'text-green-600'
+                }`;
+            }
+
+            // Preço
+            if (data.price && !data.price.error) {
+                document.getElementById('price').textContent = data.price.value || '-';
+                document.getElementById('priceUnit').textContent = data.price.unit || '-';
+                
+                const trend = data.price.trend || '-';
+                const trendEl = document.getElementById('priceTrend');
+                trendEl.textContent = trend === 'alta' ? '📈 Alta' : trend === 'queda' ? '📉 Queda' : '➡️ Estável';
+                trendEl.className = `font-semibold ${
+                    trend === 'alta' ? 'text-green-600' : 
+                    trend === 'queda' ? 'text-red-600' : 'text-gray-600'
+                }`;
+
+                document.getElementById('priceVariation').textContent = data.price.variation?.dayPercent || '-';
+            }
+
+            // Geopolítica
+            if (data.geopolitical && !data.geopolitical.error) {
+                const geoRisk = data.geopolitical.risk?.overall || '-';
+                const geoRiskEl = document.getElementById('geoRisk');
+                geoRiskEl.textContent = geoRisk;
+                geoRiskEl.className = `font-semibold ${
+                    geoRisk === 'alto' ? 'text-red-600' : 
+                    geoRisk === 'moderado' ? 'text-yellow-600' : 'text-green-600'
+                }`;
+
+                document.getElementById('geoLogistics').textContent = data.geopolitical.risk?.logistics || '-';
+                document.getElementById('geoConflict').textContent = data.geopolitical.risk?.conflict || '-';
+            }
+
+            // Análise IA
+            if (data.analysis) {
+                document.getElementById('aiSummary').textContent = data.analysis.summary || '-';
+                document.getElementById('aiClimate').textContent = data.analysis.climateImpact || '-';
+                document.getElementById('aiGeo').textContent = data.analysis.geopoliticalImpact || '-';
+                document.getElementById('aiRecommendation').textContent = data.analysis.recommendation || '-';
+                document.getElementById('aiShortTerm').textContent = data.analysis.outlook?.shortTerm || '-';
+                document.getElementById('aiMediumTerm').textContent = data.analysis.outlook?.mediumTerm || '-';
+            }
+
+            // Metadados
+            if (data.metadata) {
+                document.getElementById('metadata').textContent = 
+                    `Gerado em ${new Date(data.metadata.generatedAt).toLocaleString('pt-BR')} | Tempo: ${data.metadata.processingTime} | Qualidade: ${data.metadata.dataQuality?.percentage}%`;
+            }
+        }
+
+        // Inicializar
+        loadRegions();
+    </script>
+</body>
+</html>

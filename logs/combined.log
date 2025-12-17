@@ -1,0 +1,494 @@
+2025-12-12 10:44:09 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 10:44:09 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 10:44:09 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 10:44:09 [info]: ✅ 2 jobs agendados
+2025-12-12 10:44:09 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 10:56:20 [info]: ⏹️  SIGINT recebido
+2025-12-12 10:59:59 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 10:59:59 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 10:59:59 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 10:59:59 [info]: ✅ 2 jobs agendados
+2025-12-12 10:59:59 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 11:00:27 [info]: ⏹️  SIGINT recebido
+2025-12-12 11:01:25 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 11:01:26 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 11:01:26 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 11:01:26 [info]: ✅ 2 jobs agendados
+2025-12-12 11:01:26 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 12:00:00 [info]: 🔄 Job de reclassificação...
+2025-12-12 12:00:01 [info]: 🔄 Retry: 0/0 reclassificadas
+2025-12-12 15:30:42 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 15:30:42 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 15:30:42 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 15:30:42 [info]: ✅ 2 jobs agendados
+2025-12-12 15:30:42 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 15:30:56 [info]: ⏹️  SIGINT recebido
+2025-12-12 15:35:33 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 15:35:33 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 15:35:33 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 15:35:33 [info]: ✅ 2 jobs agendados
+2025-12-12 15:35:33 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 15:35:50 [info]: ⏹️  SIGINT recebido
+2025-12-12 15:35:58 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 15:35:58 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 15:35:58 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 15:35:58 [info]: ✅ 2 jobs agendados
+2025-12-12 15:35:58 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 15:36:08 [info]: 📊 Iniciando análise futura completa...
+2025-12-12 15:36:08 [info]: 🔄 Buscando todos os dados do Investing.com...
+2025-12-12 15:36:08 [info]: 📊 Buscando preço do cacau no Investing.com...
+2025-12-12 15:36:08 [info]: 📈 Buscando análise técnica no Investing.com...
+2025-12-12 15:36:08 [info]: 📰 Buscando notícias do cacau no Investing.com...
+2025-12-12 15:36:08 [info]: 📊 Buscando dados multi-período...
+2025-12-12 15:36:08 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-12 15:36:08 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-12 15:36:08 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-12 15:36:08 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6307
+2025-12-12 15:36:08 [info]: ✅ Histórico obtido: 51 pontos, preço atual: $6307
+2025-12-12 15:36:09 [info]: ✅ Histórico obtido: 22 pontos, preço atual: $6307
+2025-12-12 15:36:09 [info]: ✅ Análise técnica obtida: Neutro
+2025-12-12 15:36:09 [info]: ✅ Preço obtido: $6.299 (+0.17)
+2025-12-12 15:36:10 [info]: ✅ 5 notícias obtidas
+2025-12-12 15:36:10 [info]: 🎯 Gerando sinais PricePro...
+2025-12-12 15:36:10 [info]: ✅ Sinal PricePro: SHORT (força: 30%)
+2025-12-12 15:36:10 [error]: Erro na análise IA: investing?.news?.slice is not a function
+2025-12-12 15:36:10 [error]: ❌ Erro na análise futura: investingData?.news?.slice is not a function
+2025-12-12 15:37:08 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 15:37:08 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 15:37:08 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 15:37:08 [info]: ✅ 2 jobs agendados
+2025-12-12 15:37:08 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 15:37:08 [info]: 📊 Iniciando análise futura completa...
+2025-12-12 15:37:08 [info]: 🔄 Buscando todos os dados do Investing.com...
+2025-12-12 15:37:08 [info]: 📊 Buscando preço do cacau no Investing.com...
+2025-12-12 15:37:08 [info]: 📈 Buscando análise técnica no Investing.com...
+2025-12-12 15:37:08 [info]: 📰 Buscando notícias do cacau no Investing.com...
+2025-12-12 15:37:08 [info]: 📊 Buscando dados multi-período...
+2025-12-12 15:37:08 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-12 15:37:08 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-12 15:37:08 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-12 15:37:09 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6305
+2025-12-12 15:37:09 [info]: ✅ Histórico obtido: 22 pontos, preço atual: $6305
+2025-12-12 15:37:09 [info]: ✅ Histórico obtido: 51 pontos, preço atual: $6305
+2025-12-12 15:37:09 [info]: ✅ Análise técnica obtida: Neutro
+2025-12-12 15:37:10 [info]: ✅ Preço obtido: $6.3 (+0.19)
+2025-12-12 15:37:10 [info]: ✅ 5 notícias obtidas
+2025-12-12 15:37:10 [info]: 🎯 Gerando sinais PricePro...
+2025-12-12 15:37:10 [info]: ✅ Sinal PricePro: SHORT (força: 30%)
+2025-12-12 15:37:11 [info]: ✅ Análise futura concluída com sucesso
+2025-12-12 15:41:04 [info]: 📊 Iniciando análise futura completa...
+2025-12-12 15:41:04 [info]: 🔄 Buscando todos os dados do Investing.com...
+2025-12-12 15:41:04 [info]: 📊 Buscando preço do cacau no Investing.com...
+2025-12-12 15:41:04 [info]: 📈 Buscando análise técnica no Investing.com...
+2025-12-12 15:41:04 [info]: 📰 Buscando notícias do cacau no Investing.com...
+2025-12-12 15:41:04 [info]: 📊 Buscando dados multi-período...
+2025-12-12 15:41:04 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-12 15:41:04 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-12 15:41:04 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-12 15:41:05 [info]: ✅ Histórico obtido: 22 pontos, preço atual: $6302
+2025-12-12 15:41:05 [info]: ✅ Histórico obtido: 51 pontos, preço atual: $6302
+2025-12-12 15:41:05 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6302
+2025-12-12 15:41:06 [info]: ✅ 5 notícias obtidas
+2025-12-12 15:41:06 [info]: ✅ Preço obtido: $6.297 (+0.14)
+2025-12-12 15:41:07 [info]: ✅ Análise técnica obtida: Neutro
+2025-12-12 15:41:07 [info]: 🎯 Gerando sinais PricePro...
+2025-12-12 15:41:07 [info]: ✅ Sinal PricePro: SHORT (força: 30%)
+2025-12-12 15:41:08 [info]: ✅ Análise futura concluída com sucesso
+2025-12-12 16:20:49 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 16:20:49 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 16:20:49 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 16:20:49 [info]: ✅ 2 jobs agendados
+2025-12-12 16:20:49 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 16:21:35 [info]: ⏹️  SIGINT recebido
+2025-12-12 16:21:44 [info]: ✅ MongoDB conectado: localhost
+2025-12-12 16:21:44 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-12 16:21:44 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-12 16:21:44 [info]: ✅ 2 jobs agendados
+2025-12-12 16:21:44 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-12 16:22:02 [info]: 📊 Iniciando análise futura completa...
+2025-12-12 16:22:02 [info]: 📊 Buscando dados multi-período...
+2025-12-12 16:22:02 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-12 16:22:02 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-12 16:22:02 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-12 16:22:02 [info]: ✅ Histórico obtido: 22 pontos, preço atual: $6297
+2025-12-12 16:22:02 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6297
+2025-12-12 16:22:02 [info]: ✅ Histórico obtido: 51 pontos, preço atual: $6297
+2025-12-12 16:22:03 [info]: 🎯 Gerando sinais PricePro...
+2025-12-12 16:22:03 [info]: ✅ Sinal PricePro: SHORT (força: 30%)
+2025-12-12 16:22:04 [info]: ✅ Análise futura concluída com sucesso
+2025-12-12 17:06:53 [info]: 📊 Iniciando análise futura completa...
+2025-12-12 17:06:53 [info]: 📊 Buscando dados multi-período...
+2025-12-12 17:06:53 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-12 17:06:53 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-12 17:06:53 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-12 17:06:54 [info]: ✅ Histórico obtido: 22 pontos, preço atual: $6297
+2025-12-12 17:06:54 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6297
+2025-12-12 17:06:54 [info]: ✅ Histórico obtido: 51 pontos, preço atual: $6297
+2025-12-12 17:06:55 [info]: 🎯 Gerando sinais PricePro...
+2025-12-12 17:06:55 [info]: ✅ Sinal PricePro: SHORT (força: 30%)
+2025-12-12 17:06:56 [info]: ✅ Análise futura concluída com sucesso
+2025-12-16 13:10:52 [info]: ✅ MongoDB conectado: localhost
+2025-12-16 13:10:52 [info]: ⏰ Cron "daily-scrape" iniciado (0 6 * * *)
+2025-12-16 13:10:52 [info]: ⏰ Cron "retry-classification" iniciado (0 */4 * * *)
+2025-12-16 13:10:52 [info]: ⏰ Cron "daily-regional" iniciado (0 7 * * *)
+2025-12-16 13:10:52 [info]: ⏰ Cron "climate-update" iniciado (0 */6 * * *)
+2025-12-16 13:10:52 [info]: ⏰ Cron "prices-update" iniciado (0 9,11,13,15,17 * * 1-5)
+2025-12-16 13:10:52 [info]: ⏰ Cron "evening-analysis" iniciado (0 19 * * *)
+2025-12-16 13:10:52 [info]: ⏰ Cron "health-check" iniciado (*/30 * * * *)
+2025-12-16 13:10:52 [info]: ═══════════════════════════════════════════════
+2025-12-16 13:10:52 [info]: ✅ 7 jobs agendados:
+2025-12-16 13:10:52 [info]:    📰 Notícias: 06:00 (scraping) + 4h (retry)
+2025-12-16 13:10:52 [info]:    📌 Regional: 07:00 (completo)
+2025-12-16 13:10:52 [info]:    🌤️ Clima: a cada 6h
+2025-12-16 13:10:52 [info]:    💰 Preços: 9h-17h (Seg-Sex)
+2025-12-16 13:10:52 [info]:    📊 Análise: 19:00
+2025-12-16 13:10:52 [info]:    💓 Health: a cada 30min
+2025-12-16 13:10:52 [info]: ═══════════════════════════════════════════════
+2025-12-16 13:10:52 [info]: 
+╔════════════════════════════════════════════════════╗
+║  🍫 CACAU NEWS SERVER                              ║
+╠════════════════════════════════════════════════════╣
+║  🚀 Porta: 4000                                    ║
+║  🌍 Ambiente: development                          ║
+║  📊 MongoDB: Conectado                             ║
+║  🤖 Groq: Configurado                             ║
+║  ⏰ Cron: 0 6 * * *                              ║
+╠════════════════════════════════════════════════════╣
+║  📰 Notícias:                                      ║
+║  • GET  /api/news             - Listar             ║
+║  • GET  /api/news/classified  - Por relevância     ║
+║  • GET  /api/news/stats       - Estatísticas       ║
+║  • POST /api/news/scrape      - Executar scraping  ║
+╠════════════════════════════════════════════════════╣
+║  🗺️ Análise Regional:                              ║
+║  • GET  /api/regions          - Listar regiões     ║
+║  • GET  /api/regions/:id/climate   - Clima         ║
+║  • GET  /api/regions/:id/price     - Preço         ║
+║  • GET  /api/regions/:id/analysis  - ANÁLISE FULL  ║
+║  • GET  /api/regions/all/climate   - Clima global  ║
+║  • GET  /api/regions/all/prices    - Preços global ║
+╠════════════════════════════════════════════════════╣
+║  🤖 IA:                                            ║
+║  • POST /api/ai/classify      - Classificar texto  ║
+║  • GET  /api/ai/test          - Testar Groq        ║
+╚════════════════════════════════════════════════════╝
+      
+2025-12-16 13:11:40 [info]: 📊 Iniciando análise futura completa...
+2025-12-16 13:11:40 [info]: 📊 Buscando dados multi-período...
+2025-12-16 13:11:40 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-16 13:11:40 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-16 13:11:40 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-16 13:11:40 [info]: ✅ Histórico obtido: 31 pontos, preço atual: $5991
+2025-12-16 13:11:40 [info]: ✅ Histórico obtido: 21 pontos, preço atual: $5991
+2025-12-16 13:11:40 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $5991
+2025-12-16 13:11:42 [info]: 🎯 Gerando sinais PricePro...
+2025-12-16 13:11:42 [info]: ✅ Sinal PricePro: NEUTRO (força: 45%)
+2025-12-16 13:11:44 [info]: ✅ Análise futura concluída com sucesso
+2025-12-16 13:12:56 [info]: 📊 Iniciando análise futura completa...
+2025-12-16 13:12:56 [info]: 📊 Buscando dados multi-período...
+2025-12-16 13:12:56 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-16 13:12:56 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-16 13:12:56 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-16 13:12:57 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $5990
+2025-12-16 13:12:57 [info]: ✅ Histórico obtido: 31 pontos, preço atual: $5990
+2025-12-16 13:12:57 [info]: ✅ Histórico obtido: 21 pontos, preço atual: $5990
+2025-12-16 13:12:58 [info]: 🎯 Gerando sinais PricePro...
+2025-12-16 13:12:58 [info]: ✅ Sinal PricePro: NEUTRO (força: 45%)
+2025-12-16 13:12:59 [info]: ✅ Análise futura concluída com sucesso
+2025-12-16 13:15:46 [info]: 📊 Iniciando análise futura completa...
+2025-12-16 13:15:46 [info]: 📊 Buscando dados multi-período...
+2025-12-16 13:15:46 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-16 13:15:46 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-16 13:15:46 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-16 13:15:46 [info]: ✅ Histórico obtido: 31 pontos, preço atual: $5989
+2025-12-16 13:15:46 [info]: ✅ Histórico obtido: 35 pontos, preço atual: $5989
+2025-12-16 13:15:46 [info]: ✅ Histórico obtido: 21 pontos, preço atual: $5989
+2025-12-16 13:15:47 [info]: 🎯 Gerando sinais PricePro...
+2025-12-16 13:15:47 [info]: ✅ Sinal PricePro: NEUTRO (força: 45%)
+2025-12-16 13:15:48 [info]: ✅ Análise futura concluída com sucesso
+2025-12-16 13:16:11 [info]: 📊 Iniciando análise futura completa...
+2025-12-16 13:16:11 [info]: 📊 Buscando dados multi-período...
+2025-12-16 13:16:11 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-16 13:16:11 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-16 13:16:11 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-16 13:16:12 [info]: ✅ Histórico obtido: 35 pontos, preço atual: $5986
+2025-12-16 13:16:12 [info]: ✅ Histórico obtido: 21 pontos, preço atual: $5986
+2025-12-16 13:16:12 [info]: ✅ Histórico obtido: 31 pontos, preço atual: $5986
+2025-12-16 13:16:13 [info]: 🎯 Gerando sinais PricePro...
+2025-12-16 13:16:13 [info]: ✅ Sinal PricePro: NEUTRO (força: 45%)
+2025-12-16 13:16:14 [info]: ✅ Análise futura concluída com sucesso
+2025-12-16 13:29:36 [info]: 📊 Iniciando análise futura completa...
+2025-12-16 13:29:36 [info]: 📊 Buscando dados multi-período...
+2025-12-16 13:29:36 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-16 13:29:36 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-16 13:29:36 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-16 13:29:36 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6042
+2025-12-16 13:29:36 [info]: ✅ Histórico obtido: 21 pontos, preço atual: $6042
+2025-12-16 13:29:36 [info]: ✅ Histórico obtido: 32 pontos, preço atual: $6042
+2025-12-16 13:29:39 [info]: 🎯 Gerando sinais PricePro...
+2025-12-16 13:29:39 [info]: ✅ Sinal PricePro: NEUTRO (força: 45%)
+2025-12-16 13:29:40 [info]: ✅ Análise futura concluída com sucesso
+2025-12-16 13:30:00 [info]: 💓 [CRON] Health check: 16/12/2025, 13:30:00 - Sistema ativo
+2025-12-16 13:36:00 [info]: 📊 Iniciando análise futura completa...
+2025-12-16 13:36:00 [info]: 📊 Buscando dados multi-período...
+2025-12-16 13:36:00 [info]: 📊 Buscando histórico do cacau (1d, 15m)...
+2025-12-16 13:36:00 [info]: 📊 Buscando histórico do cacau (5d, 1h)...
+2025-12-16 13:36:00 [info]: 📊 Buscando histórico do cacau (1mo, 1d)...
+2025-12-16 13:36:00 [info]: ✅ Histórico obtido: 21 pontos, preço atual: $6038
+2025-12-16 13:36:00 [info]: ✅ Histórico obtido: 36 pontos, preço atual: $6038
+2025-12-16 13:36:00 [info]: ✅ Histórico obtido: 32 pontos, preço atual: $6038
+2025-12-16 13:36:01 [info]: 🎯 Gerando sinais PricePro...
+2025-12-16 13:36:01 [info]: ✅ Sinal PricePro: NEUTRO (força: 45%)
+2025-12-16 13:36:02 [info]: ✅ Análise futura concluída com sucesso
